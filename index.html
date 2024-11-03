@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TodoNow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto" href="#">TodoNow</a>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">TodoNow</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="login.html" class="login-button">Login</a>
+          <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+    </nav>
+    <section class="hero-section">
+        <div class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column">
+            <h1>TodoNow</h1>
+            <h2>Organiza tus tareas diarias y mantente al día con esta lista de pendientes</h2>
+        </div>
+    </section>
+
+      <div class="p-5 mb-4 bg-body-tertiary rounded-3 ">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold">Bienvenido a TodoNow</h1>
+          <p class="col-md-8 fs-4">¡Toma el control de tu día a día! En TodoNow, te ofrecemos una herramienta sencilla y eficaz para gestionar tus tareas y proyectos. Organiza tus prioridades, establece metas y mantente enfocado en lo que realmente importa. Ya sea que estés manejando un proyecto importante o tus actividades diarias, nuestra plataforma está diseñada para ayudarte a ser más productivo y alcanzar tus objetivos con facilidad.</p>
+          <button class="btn btn-primary btn-lg boton" type="button">Conocemas Aqui</button>
+        </div>
+      </div>
+  
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+          <div class="h-100 p-5 text-bg-dark rounded-3 contenedor">
+            <h2>En TodoNow</h2>
+            <p style="color: #fff;">ofrecemos herramientas simples pero poderosas para ayudarte a gestionar tu tiempo y tareas de manera eficiente</p>
+            <ul>
+              <li><span class="texto-lista">Creación de Listas Personalizadas:</span> Organiza tus tareas en diferentes listas según tus necesidades, ya sea trabajo, estudios o actividades personales.</li>
+              <li><span class="texto-lista">Seguimiento de Progreso:</span> Marca tareas como completadas y visualiza tu avance en tiempo real.</li>
+              <li><span class="texto-lista">Recordatorios:</span> Configura alertas para nunca olvidar una tarea importante.</li>
+            </ul>
+            <button class="btn btn-outline-light" type="button">Conocemas Aqui</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="h-100 p-5 text-bg-dark rounded-3 contenedor">
+            <h2>Contáctanos</h2>
+            <p style="color: #fff;">¡Nos encantaría saber de ti! En [Nombre de tu página], valoramos la comunicación y estamos aquí para ayudarte en lo que necesites. Si tienes preguntas, sugerencias o comentarios, no dudes en ponerte en contacto con nosotros.</p>
+            <ul>
+              <li><span class="texto-lista">Correo Electrónico:</span> Envíanos un mensaje a [tu correo electrónico] y responderemos a la brevedad.</li>
+              <li><span class="texto-lista">Redes Sociales:</span> Síguenos en nuestras redes sociales para estar al tanto de las novedades y compartir tus experiencias.</li>
+              <li><span class="texto-lista">Formulario de Contacto:</span> Completa nuestro [formulario de contacto] y nos pondremos en contacto contigo lo más pronto posible.</li>
+            </ul>
+            <button class="btn btn-outline-light" type="button">Conocemas Aqui</button>
+          </div>
+        </div>
+      </div>
+  
+      <footer class="pt-3 mt-4 text-body-secondary border-top">
+        <div class="container">
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-body-secondary">© 2024 Company, Inc</p>
+        
+            <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+        
+            <ul class="nav col-md-4 justify-content-end">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Sobre Nosotros</a></li>
+            </ul>
+          </footer>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  </body>
+</html>

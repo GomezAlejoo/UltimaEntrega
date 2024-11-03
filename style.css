@@ -1,0 +1,723 @@
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    background-image: url('./img/tareasFondo.jpg'); /* Cambia 'mainFondo.jpg' por la ruta correcta de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+  
+  .navbar{
+    background-color: #e1e1e1;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 20px;
+  }
+  
+  
+  
+  .navbar-brand{
+    font-weight: 500;
+    color: #009970;
+    font-size: 24px;
+    transition: 0.3s color;
+  }
+  
+  .login-button{
+    background-color: #009970;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius:50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+  }
+  
+  .login-button:hover{
+    background-color: #00b383;
+  }
+  
+  .navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+  }
+  
+  .navbar-toggler:focus,.btn-close:focus{
+    box-shadow: none;
+    outline: none;
+  }
+  
+  .nav-link{
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .nav-link:hover,.nav-link.active{
+    color: #000;
+  }
+  
+  @media (min-width: 991px ) {
+   
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #009970;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .nav-link:hover::before, .nav-link.active::before{
+        width: 100%;
+        visibility: visible;
+    }
+  }
+  
+  
+  .hero-section{
+    background: url(/img/indexFondo.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    filter: brightness(70%);
+  }
+  
+  .login-img{
+    background: url(/img/loginFondo.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    
+  }
+  
+  .hero-section .container{
+    height: 90vh;
+    z-index: 1;
+    position: relative;
+    
+  }
+  
+  .hero-section h1{
+    font-size: 1.5rem;
+    
+  }
+  
+  .hero-section h2{
+    font-size: 1.2rem;
+    
+  }
+  
+  
+  .contenedor{
+    margin: 20px;
+  }
+  
+  .boton{
+    background-color: #009970;
+  }
+  
+  .boton:hover{
+    background-color: #00b383;
+  
+  }
+  
+  ul {
+    list-style-type: circle; 
+    padding-left: 20px; 
+  }
+  
+  li {
+    font-size: 18px; 
+    color: #ffffff;
+    margin-bottom: 10px; 
+    line-height: 1.5;
+  }
+  
+  .texto-lista{
+    font-weight: 700;
+  }
+  
+  .boton-flotante {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #009970;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px; 
+    line-height: 60px;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton-flotante:hover {
+    background-color: #00b383;
+  }
+  
+  .form-check{
+    margin:10px ;
+  }
+  
+  .card-header {
+    background-color: #009970;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .body-login {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .title-login {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .box-visible {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .button-session {
+    width: 100%;
+    padding: 12px;
+    background-color: #009970;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-session:hover {
+    background-color: #00b383;
+  }
+  
+  .button-session:focus {
+    outline: none;
+  }
+  
+  @media (max-width: 480px) {
+    .login-container {
+        padding: 20px;
+    }
+  }
+  
+  .btn-sm i {
+    font-size: 14px;
+  }
+  
+  .btn-warning {
+    color: white;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .align-items-center {
+    align-items: center;
+  }
+  
+  .ml-2 {
+    margin-left: 10px;
+  }
+  
+  
+  .btn-link {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .btn-link:hover {
+    text-decoration: none;
+  }
+  
+  .fas {
+    transition: transform 0.2s ease;
+  }
+  
+  
+  .card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e5e5e5;
+    cursor: pointer;
+  }
+  
+  .btn-link {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .btn-link:hover {
+    text-decoration: none;
+  }
+  
+  .fas {
+    transition: transform 0.2s ease;
+  }
+  
+  /*MAIN*/
+  .card-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 130px;
+  }
+  
+  .task-item {
+    border: 1px solid #dee2e6;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+  }
+  
+  .task-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .task-title {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  .task-actions {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .task-description {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #6c757d;
+  }
+  
+  .add-task-btn {
+    width: 100%;
+  }
+  
+  /*CLIMA =================================================*/
+  .body-clima {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+  }
+  
+  .weather-container {
+    max-width: 600px;
+    width: 100%;
+    border: 2px solid #e0e0e0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weather-icon {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .temperature {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .weather-type {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #007bff;
+  }
+  
+  .date {
+    font-size: 1em;
+    color: #555;
+  }
+  .province-weather-container {
+    max-width: 700px;
+    margin: 10px 10px;
+    padding: 20px;
+    background-color: #00563f;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .province-weather-container .title {
+    color: #ffffff;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0;
+  }
+  .province-input-container {
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .province-input {
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 20px;
+    font-size: 1em;
+    border: 2px solid #009970;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .province-input:focus {
+    border-color: #007a5e;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 122, 94, 0.3);
+  }
+  
+  .province-input::placeholder {
+    color: #999;
+    font-style: italic;
+  }
+  
+  
+  .submit-button {
+    padding: 10px 20px; 
+    background-color: #007a5e;
+    color: white;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    margin-bottom: 20px;
+  }
+  
+  .submit-button:hover {
+    background-color: #00b383;
+  }
+  
+  #result-container {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #00563f;     
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #result-container .weather-container {
+    width: 100%; 
+  }
+  
+  .card-task {
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  .card-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #000;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin-bottom: 10px;
+  }
+  
+  .task-item label {
+    margin-left: 8px;
+    font-size: 1em;
+  }
+  
+  .add-task {
+    font-size: 0.9em;
+    color: #007bff;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+  
+  .delete-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .custom-container {
+    width: 100%; /* Asegura que ocupe el ancho completo */
+    background-color: #00563f; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    color: white; /* Color del texto */
+    /* border-radius: 8px; Bordes redondeados */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Sombra */
+    margin-top: 120px; /* Separación superior */
+  }
+  
+  .title {
+    font-size: 2em; /* Tamaño de la fuente del título */
+    margin: 0;
+  }
+  .custom-container {
+    display: flex;
+    background-image: url(./img/tareasFondo.jpg);
+    flex-wrap: wrap; /* Permite que las tarjetas bajen a la siguiente fila si el espacio es insuficiente */
+    justify-content: space-around; /* Espaciado uniforme entre tarjetas */
+    width: 100%; 
+    background-color: #00563f;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 120px;
+  }
+  
+  .card-task {
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 10px;
+  }
+  .container-title {
+    width: 100%; /* Asegura que ocupe el ancho completo */
+    background-color: #007a5e; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    color: white; /* Color del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Sombra */
+  }
+  
+  .title {
+    font-size: 2em; /* Tamaño de la fuente del título */
+    margin: 0;
+  }
+  
+  .add-task {
+    font-size: 1em;
+    color: #999;
+    cursor: pointer;
+    margin: 10px 0;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  p{
+    color: #000;
+  }
+  
+  .task-text{
+    color: #000;
+  }
+  
+  /* Estilos generales para las tarjetas */
+  .card-task {
+    display: inline-block;
+    width: 300px;
+    margin-right: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .task-text {
+    margin-left: 10px;
+    flex: 1;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .add-task {
+    cursor: pointer;
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  #taskContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  #taskContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .card-task {
+    width: 250px; /* Ancho fijo para controlar cuántas tarjetas caben en una fila */
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .card-task h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .task-item {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  .task-item input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  .delete-btn, .delete-card-btn {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    color: #fff;
+  }
+  .delete-btn {
+    background-color: #dc3545;
+  }
+  .delete-card-btn {
+    background-color: #6c757d;
+  }
+  .add-task-container {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .user-input {
+    width: 100%;
+    display: none;
+  }
+  .delete-subtask-btn {
+    background-color: #dc3545; /* Color de fondo rojo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 0.2rem 0.5rem; /* Espaciado interno */
+    border-radius: 0.25rem; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+  }
+  
+  .delete-subtask-btn:hover {
+    background-color: #c82333; /* Color más oscuro al pasar el mouse */
+  }
+  /* En tu archivo styles.css */
+  .subtask-input {
+    max-width: 200px; /* Ajusta según lo necesites */
+    width: 100%; /* Asegúrate de que ocupe el ancho completo del contenedor */
+    overflow-wrap: break-word; /* Esto ayudará a que el texto largo se divida en varias líneas */
+    white-space: normal; /* Permitir que el texto ocupe varias líneas si es necesario */
+  }
+  
+  
